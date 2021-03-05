@@ -21,7 +21,7 @@ public class User {
 	public String lastname;
 
 	@OneToMany
-	private List<Product> listProduit;
+	private List<Product> lstProduct;
 
 	public Long getId() {
 		return id;
@@ -47,17 +47,17 @@ public class User {
 		this.lastname = lastname;
 	}
 
-	public List<Product> getListProduit() {
-		return listProduit;
+	public List<Product> getLstProduct() {
+		return lstProduct;
 	}
 
-	public void setListProduit(List<Product> listProduit) {
-		this.listProduit = listProduit;
+	public void setLstProduct(List<Product> lstProduct) {
+		this.lstProduct = lstProduct;
 	}
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", firstname=" + firstname + ", lastname=" + lastname + ", listProduit=" + listProduit
+		return "User [id=" + id + ", firstname=" + firstname + ", lastname=" + lastname + ", lstProduct=" + lstProduct
 				+ "]";
 	}
 }
